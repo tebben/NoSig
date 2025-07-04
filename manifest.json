@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "NoSig",
+  "version": "1.0",
+  "description": "Removes the default signature in Outlook.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://outlook.office.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
+
