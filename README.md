@@ -2,6 +2,8 @@
 
 Tired of annoying signatures cluttering up your Outlook? This extension automatically removes your company's default signature from new emails and also cleans up detectable signatures from incoming messages, giving you a cleaner reading experience.
 
+The only thing this extension does is polling for elements with an id containing "signature" and removing them after the mutation observer detects changes in the DOM. It does not modify any other content or functionality of Outlook.
+
 # How to Install the 'NoSig' Chrome Extension Locally
 
 1.  **Open Chrome Extensions:**
@@ -29,7 +31,3 @@ Tired of annoying signatures cluttering up your Outlook? This extension automati
     - Compose a new email.
     - The extension will automatically detect and remove the default signature.
     - For incoming emails, it will clean up any detectable signatures.
-
-6.  **Debugging:**
-    - To see the debugging logs, open the Chrome Developer Tools (you can right-click on the Outlook page and select "Inspect").
-    - Go to the "Console" tab to see the log messages from the extension.
